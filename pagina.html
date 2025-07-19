@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contador</title>
+    <style>
+        #contador {
+            font-size: 30 px;
+            color: indianred;
+        }
+    </style>
+</head>
+<body>
+    <h1>Contador</h1>
+    <div id="Contador">0</div>
+    <button onclick="Subir()">Subir</button>
+    <button onclick="Bajar()">Bajar</button>
+    <script>
+        let numero = 0;
+        function mostrar () {
+            const Contador = document.getElementById("contador");
+            Contador.textContent = numero;
+
+            if (numero === 10) {
+                contador.style.color ="blue";
+            } else {
+                contador.style.color = "yellow";
+            }
+        }
+
+        function Subir() {
+            numero++;
+            mostrar();
+        }
+
+        function Bajar() {
+            numero--;
+            mostrar();
+        }
+    </script>
+</body>
+</html>
